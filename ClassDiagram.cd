@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DMainModel" Collapsed="true">
+    <Position X="11.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAACAAAQAAAAAAEAAAQAAAAgAAAAAAAAAKIAA=</HashCode>
+      <FileName>dmainmodel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DOpenglWidget" Collapsed="true">
+    <Position X="13.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AI4AAIAAACBAAAASACAAJBBAAAAQAAAAAAAAAAABAgA=</HashCode>
+      <FileName>dopenglwidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DView" Collapsed="true">
+    <Position X="13.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAoAAIAAAABAAAASACEAIABAAAAQEAQAQAAAAAAAAgA=</HashCode>
+      <FileName>dview.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shadow" Collapsed="true">
+    <Position X="13.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAECAAAAAAAAAAEAQAgQAAAAAAAgA=</HashCode>
+      <FileName>shadow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMainView" Collapsed="true">
+    <Position X="13.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAABABAAEAgAQAAAAAAAAAEAAAAAAEAAAAIAAA=</HashCode>
+      <FileName>dmainview.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="de::DIView" Collapsed="true">
+    <Position X="13.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAoAAIAAAABAAAASACAAYABAAAAQEAQAAAAAAAAAAAA=</HashCode>
+      <FileName>diview.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
