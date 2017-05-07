@@ -28,7 +28,7 @@ void DView::initializeGL()
 {
 	gl_->glClearColor(0.2f, 0.2f, 0.2f, 1.0f);
 
-	model_->Load("models/nude.obj");
+	model_->Load("models/ball.obj");
 
 	de::ShaderInfo scene_shaders[] =
 	{

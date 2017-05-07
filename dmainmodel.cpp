@@ -2,6 +2,7 @@
 
 #include "dview.h"
 #include "shadow.h"
+#include "simpletriangle.h"
 
 DMainModel::DMainModel()
 	: view_(NULL),
@@ -22,6 +23,7 @@ void DMainModel::InitModel()
 	proj_map_ = new QMap<QString,int>();
 	proj_map_->insert("default", DEFAULT);
 	proj_map_->insert("shadow", SHADOW);
+	proj_map_->insert("triangle", TRIANGLES);
 }
 
 QList<QString> DMainModel::get_projects()
@@ -40,6 +42,9 @@ de::DIView * DMainModel::get_view(const QString& name)
 		break;
 	case SHADOW:
 		view_ = new Shadow();
+		break;
+	case TRIANGLES:
+		view_ = new SimpleTriangle();
 		break;
 	default:
 		view_ = new DView();

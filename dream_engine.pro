@@ -18,6 +18,7 @@ HEADERS += \
 	dtexture.h \
 	ddir.h \
 	vdds.h \
+	simpletriangle.h \
 	
 	
 SOURCES += \
@@ -36,7 +37,7 @@ SOURCES += \
 	dshadertoymodel.cpp \
 	dtexture.cpp \
 	ddir.cpp \
-
+	simpletriangle.cpp \
 	
 	
 INCLUDEPATH += C:/Users/Eric/Documents/"Visual Studio 2015"/Projects/cpp/glm/ \

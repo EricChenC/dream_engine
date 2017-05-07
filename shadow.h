@@ -10,7 +10,7 @@
 class Shadow : public DView
 {
 public:
-	Shadow();
+	explicit Shadow();
 	virtual ~Shadow();
 
 	virtual void initializeGL();

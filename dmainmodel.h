@@ -23,7 +23,8 @@ private:
 	enum Project
 	{
 		DEFAULT,
-		SHADOW
+		SHADOW,
+		TRIANGLES
 	};
 
 	de::DIView *view_;
