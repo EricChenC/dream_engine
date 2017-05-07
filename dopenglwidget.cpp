@@ -81,6 +81,7 @@ void DOpenglWidget::init_view()
 {
 	makeCurrent();
 	view_->set_gl(gl_);
+	view_->set_widget(this);
 	view_->initializeGL();
 	doneCurrent();
 }

@@ -32,6 +32,8 @@ void DMainView::InitUI(QApplication *app)
 	window_->setCentralWidget(gl_widget_);
 	QRect rect = app->desktop()->screenGeometry();
 
+	// for active mouse and keyboard event
+	gl_widget_->setFocusPolicy(Qt::StrongFocus);
 	gl_widget_->set_view(model_->get_view()); // default view
 	window_->setGeometry(rect.width() / 4, rect.height() / 4, 800, 600);
 

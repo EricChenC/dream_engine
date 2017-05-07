@@ -16,10 +16,8 @@ public:
 	virtual void initializeGL();
 	virtual void paintGL(const int& time);
 	virtual void clearGL();
-	virtual void set_gl(QOpenGLFunctions_4_3_Core *gl);
 
 private:
-	QOpenGLFunctions_4_3_Core *gl_;
 	GLuint vao_;
 
 };

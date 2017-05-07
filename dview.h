@@ -4,6 +4,12 @@
 #define DIVEW_H
 
 #include "diview.h"
+#include "dplayercamera.h"
+#include "dmodel.h"
+#include "dshader.h"
+
+#include <glm/glm.hpp>
+#include <vector>
 
 class DView : public de::DIView
 {
@@ -23,9 +29,28 @@ public:
 	virtual void mouseReleaseEvent(QMouseEvent *event);
 	virtual void wheelEvent(QWheelEvent *event);
 	virtual void set_gl(QOpenGLFunctions_4_3_Core *gl);
+	virtual void set_widget(QWidget *widget);
+
+protected:
+	QOpenGLFunctions_4_3_Core *gl_;
+	QWidget *gl_widget_;
+	de::DModel *model_;
+	de::DShader *shader_;
+
+	bool pause_;
 
 private:
-	QOpenGLFunctions_4_3_Core *gl_;
+	bool right_button_press_;
+	bool init_mouse_pos_;
+	QPoint mouse_last_pos_;
+
+	de::DPlayerCamera *player_camera_;
+
+	GLuint program_;
+	GLuint mvp_loc_;
+	GLuint mv_loc_;
+	GLuint light_loc_;
+
 };
 
 #endif // !DIVEW_H

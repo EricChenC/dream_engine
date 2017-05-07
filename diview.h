@@ -10,6 +10,7 @@ class QMouseEvent;
 class QMoveEvent;
 class QWheelEvent;
 class QOpenGLFunctions_4_3_Core;
+class QWidget;
 
 namespace de {
 class DIView : public QObject
@@ -30,6 +31,7 @@ public:
 	virtual void mouseReleaseEvent(QMouseEvent *event) = 0;
 	virtual void wheelEvent(QWheelEvent *event) = 0;
 	virtual void set_gl(QOpenGLFunctions_4_3_Core *gl) = 0;
+	virtual void set_widget(QWidget *widget) = 0;
 };
 }
 

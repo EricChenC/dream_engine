@@ -31,8 +31,3 @@ void Shadow::clearGL()
 {
 	gl_->glDeleteVertexArrays(1,&vao_);
 }
-
-void Shadow::set_gl(QOpenGLFunctions_4_3_Core * gl)
-{
-	gl_ = gl;
-}
