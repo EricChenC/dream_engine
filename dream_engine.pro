@@ -7,6 +7,7 @@ HEADERS += \
 	diview.h \
 	dview.h \
 	shadow.h \
+	dimaterial.h \
 	dmaterialview.h \
 	dmaterialmodel.h \
 	dmodel.h \
