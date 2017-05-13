@@ -18,7 +18,16 @@ public:
 	virtual void clearGL();
 
 private:
-	GLuint vao_;
+	GLuint depth_program_;
+	GLuint shadow_program_;
+
+	GLuint depth_mvp_loc_;
+	GLuint shadow_mvp_loc_;
+	GLuint shadow_bias_mvp_loc_;
+	GLuint shadow_map_tex_loc_;
+
+	GLuint depth_texture_;
+	GLuint depth_fbo_;
 
 };
 

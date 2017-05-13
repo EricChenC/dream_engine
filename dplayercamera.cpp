@@ -6,9 +6,9 @@ DPlayerCamera::DPlayerCamera()
 	mouse_speed_ = 0.005f;
 	horizontal_angle_ = 0.0f;
 	vertical_angle_ = 0.0f;
-	move_pace_ = 0.05f;
+	move_pace_ = 0.1f;
 
-	view_position_ = QVector3D(0.0f, 0.0f, -5.0f);
+	view_position_ = QVector3D(0.0f, 1.0f, -6.0f);
 	view_center_ = QVector3D(0.0f, 0.0f, 0.0f);
 	view_up_ = QVector3D(0.0f, 1.0f, 0.0f);
 
@@ -20,6 +20,9 @@ DPlayerCamera::DPlayerCamera()
 	Model_.setToIdentity();
 	UpdateViewMatrix();
 	UpdateProjectionMatrix();
+
+	// init camera rotate position 
+	RotateCamera(QPoint(0,1));
 
 }
 

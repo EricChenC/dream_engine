@@ -10,6 +10,8 @@ DOpenglWidget::DOpenglWidget(QWidget *parent)
 	surface.setSamples(8);
 	setFormat(surface);
 
+	view_ = NULL;
+
 	connect(&timer_, SIGNAL(timeout()), this, SLOT(update()));
 	timer_.start(10);
 
@@ -83,5 +85,12 @@ void DOpenglWidget::init_view()
 	view_->set_gl(gl_);
 	view_->set_widget(this);
 	view_->initializeGL();
+	doneCurrent();
+}
+
+void DOpenglWidget::ClearLastGL()
+{
+	makeCurrent();
+	view_->clearGL();
 	doneCurrent();
 }

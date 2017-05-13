@@ -28,6 +28,8 @@ public:
 	virtual void wheelEvent(QWheelEvent *event);
 	void set_view(de::DIView *view);
 	void init_view();
+	void ClearLastGL();
+
 
 private:
 	QOpenGLFunctions_4_3_Core *gl_;

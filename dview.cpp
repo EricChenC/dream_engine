@@ -51,6 +51,9 @@ void DView::initializeGL()
 
 void DView::resizeGL(int w, int h)
 {
+	w_ = w;
+	h_ = h;
+
 	player_camera_->UpdateProjectionRatio((float)w / h);
 }
 
@@ -67,7 +70,6 @@ void DView::paintGL(const int& time)
 
 	const float light_pos[3] = {5.0f, 5.0f, -5.0f};
 	gl_->glUniform3fv(light_loc_, 1, light_pos);
-
 
 	model_->Render();
 	
@@ -198,3 +200,15 @@ void DView::set_widget(QWidget * widget)
 {
 	gl_widget_ = widget;
 }
+
+int DView::get_w() const
+{
+	return w_;
+}
+
+int DView::get_h() const
+{
+	return h_;
+}
+
+

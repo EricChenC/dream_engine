@@ -3,6 +3,7 @@
 #include "dview.h"
 #include "shadow.h"
 #include "simpletriangle.h"
+#include "spotlight.h"
 
 DMainModel::DMainModel()
 	: view_(NULL),
@@ -24,6 +25,7 @@ void DMainModel::InitModel()
 	proj_map_->insert("default", DEFAULT);
 	proj_map_->insert("shadow", SHADOW);
 	proj_map_->insert("triangle", TRIANGLES);
+	proj_map_->insert("spotlight", SPOTLIGHT);
 }
 
 QList<QString> DMainModel::get_projects()
@@ -45,6 +47,9 @@ de::DIView * DMainModel::get_view(const QString& name)
 		break;
 	case TRIANGLES:
 		view_ = new SimpleTriangle();
+		break;
+	case SPOTLIGHT:
+		view_ = new SpotLight();
 		break;
 	default:
 		view_ = new DView();

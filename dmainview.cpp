@@ -18,6 +18,7 @@ DMainView::DMainView()
 
 DMainView::~DMainView()
 {
+	gl_widget_->ClearLastGL();
 	delete model_;
 	delete gl_widget_;
 	delete example_menu_;
@@ -59,6 +60,8 @@ void DMainView::ExampleAction(QAction *action) {
 	}
 
 	last_action_ = action;
+
+	gl_widget_->ClearLastGL();
 
 	gl_widget_->set_view(model_->get_view(action->text()));
 	gl_widget_->init_view();

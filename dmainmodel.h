@@ -24,7 +24,8 @@ private:
 	{
 		DEFAULT,
 		SHADOW,
-		TRIANGLES
+		TRIANGLES,
+		SPOTLIGHT
 	};
 
 	de::DIView *view_;
