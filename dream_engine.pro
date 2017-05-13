@@ -20,6 +20,7 @@ HEADERS += \
 	vdds.h \
 	simpletriangle.h \
 	spotlight.h \
+	modelshow.h \
 	
 SOURCES += \
     main.cpp \
@@ -39,6 +40,7 @@ SOURCES += \
 	ddir.cpp \
 	simpletriangle.cpp \
 	spotlight.cpp \
+	modelshow.cpp \
 	
 	
 INCLUDEPATH += C:/Users/Eric/Documents/"Visual Studio 2015"/Projects/cpp/glm/ \

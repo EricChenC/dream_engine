@@ -19,8 +19,8 @@ void ModelShow::initializeGL()
 
 	de::ShaderInfo scene_shaders[] =
 	{
-		{ GL_VERTEX_SHADER, "shaders/dview/dview.vs.glsl" },
-		{ GL_FRAGMENT_SHADER, "shaders/dview/dview.fs.glsl" },
+		{ GL_VERTEX_SHADER, "shaders/mdoel_show/mdoel_show.vs.glsl" },
+		{ GL_FRAGMENT_SHADER, "shaders/mdoel_show/mdoel_show.fs.glsl" },
 		{ GL_NONE }
 	};
 
