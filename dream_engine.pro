@@ -19,7 +19,7 @@ HEADERS += \
 	ddir.h \
 	vdds.h \
 	simpletriangle.h \
-	
+	spotlight.h \
 	
 SOURCES += \
     main.cpp \
@@ -38,6 +38,7 @@ SOURCES += \
 	dtexture.cpp \
 	ddir.cpp \
 	simpletriangle.cpp \
+	spotlight.cpp \
 	
 	
 INCLUDEPATH += C:/Users/Eric/Documents/"Visual Studio 2015"/Projects/cpp/glm/ \
