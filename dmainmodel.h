@@ -16,7 +16,7 @@ public:
 
 	void InitModel();
 	QList<QString> get_projects();
-	de::DIView* get_view(const QString& name = "default");
+	de::DIView* get_view(const QString& name = "model_show");
 	void ClearOldView();
 
 private:
@@ -25,7 +25,8 @@ private:
 		DEFAULT,
 		SHADOW,
 		TRIANGLES,
-		SPOTLIGHT
+		SPOTLIGHT,
+		MODELSHOW
 	};
 
 	de::DIView *view_;

@@ -1,15 +1,15 @@
 #pragma once
 
-#ifndef SPOTLIHGIT_H
-#define SPOTLIHGIT_H
+#ifndef MDOELSHOW_H
+#define MDOELSHOW_H
 
 #include "dview.h"
 
-class SpotLight : public DView
+class ModelShow : public DView
 {
 public:
-	SpotLight();
-	~SpotLight();
+	ModelShow();
+	~ModelShow();
 
 	virtual void initializeGL();
 	virtual void paintGL(const int& time);
@@ -18,13 +18,13 @@ public:
 
 private:
 	GLuint program_;
-
 	GLuint mvp_loc_;
-	GLuint light_position_loc_;
+	GLuint mv_loc_;
+	GLuint light_loc_;
 
 };
 
-#endif // !SPOTLIHGIT_H
+#endif // !MDOELSHOW_H
 
 
 

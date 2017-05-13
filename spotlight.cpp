@@ -8,6 +8,7 @@ SpotLight::SpotLight()
 
 SpotLight::~SpotLight()
 {
+	clearGL();
 }
 
 void SpotLight::initializeGL()
@@ -46,10 +47,13 @@ void SpotLight::paintGL(const int & time)
 
 }
 
-void SpotLight::clearGL()
+void SpotLight::disableGL()
 {
 	gl_->glDisable(GL_DEPTH_TEST);
+}
 
+void SpotLight::clearGL()
+{
 	gl_->glDeleteProgram(program_);
 
 	model_->Free();

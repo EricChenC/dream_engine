@@ -10,7 +10,8 @@ void main(){
 	
 	vec4 vertex_dirction = light_position - vertex_position;
 
-	float angle = dot(normalize(vertex_dirction), normalize(light_position));
+	// dot need a vertor is oppsited
+	float angle = dot(normalize(light_position), normalize(vertex_dirction));
 	
 	vec4 light_color = vec4(0.0f, 0.0f, 0.0f, 1.0f);
 	vec4 ambient_color = vec4(0.4f, 0.4f, 0.4f, 1.0f);

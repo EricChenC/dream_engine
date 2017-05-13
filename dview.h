@@ -20,6 +20,7 @@ public:
 	virtual void initializeGL();
 	virtual void resizeGL(int w, int h);
 	virtual void paintGL(const int& time);
+	virtual void disableGL();
 	virtual void clearGL();
 	virtual void keyPressEvent(QKeyEvent *event);
 	virtual void keyReleaseEvent(QKeyEvent *event);
@@ -42,20 +43,14 @@ protected:
 	de::DPlayerCamera *player_camera_;
 
 	bool pause_;
-	int w_;
-	int h_;
-
+	
 private:
 	bool right_button_press_;
 	bool init_mouse_pos_;
 	QPoint mouse_last_pos_;
 
-	GLuint program_;
-	GLuint mvp_loc_;
-	GLuint mv_loc_;
-	GLuint light_loc_;
-
-	
+	int w_;
+	int h_;
 
 };
 

@@ -1,11 +1,11 @@
 #version 430 core
 
+uniform mat4 mvp;
+uniform mat4 bias_mvp;
+
 layout(location = 0) in vec3 vPosition;
 
 out vec4 ShadowCoord;
-
-uniform mat4 mvp;
-uniform mat4 bias_mvp;
 
 void main(){
 

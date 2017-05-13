@@ -15,6 +15,7 @@ public:
 
 	virtual void initializeGL();
 	virtual void paintGL(const int& time);
+	virtual void disableGL();
 	virtual void clearGL();
 
 private:

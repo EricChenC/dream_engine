@@ -10,21 +10,21 @@
   <Class Name="DOpenglWidget" Collapsed="true">
     <Position X="12" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AI4AAIAAACBAAAASACAAJBBAAAAQAAAAAAAAAAABAgA=</HashCode>
+      <HashCode>AI4AAIAAACBAAAASACAAJBBAAAAQAAAIAAAAAAABAgA=</HashCode>
       <FileName>dopenglwidget.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DView" Collapsed="true">
     <Position X="12" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABoAAIKAAAJAAAASACkAKABAAAAQEAQAQABAQAAIIgA=</HashCode>
+      <HashCode>AAoAAICAAABAAAASAGkBIABQAgAwEAQAQABAQAAIIgA=</HashCode>
       <FileName>dview.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Shadow" Collapsed="true">
-    <Position X="17.5" Y="7" Width="1.5" />
+    <Position X="17.25" Y="7" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAIAAAAAAAAAAECAAAAAAAAAAAAQAgQAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAIAAAAAAAAAAFOgACAAAAEAAAAQAgEAIAAAAAAg=</HashCode>
       <FileName>shadow.h</FileName>
     </TypeIdentifier>
   </Class>
@@ -38,7 +38,7 @@
   <Class Name="de::DIView" Collapsed="true">
     <Position X="12" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAoAAIAAAABAAAASACAAYABAAAAQEAQAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAoAAIAAAABAAAASAGABYABAAAAwEAQAAAAAAAAAAAA=</HashCode>
       <FileName>diview.h</FileName>
     </TypeIdentifier>
   </Class>
@@ -71,35 +71,35 @@
     </TypeIdentifier>
   </Class>
   <Class Name="DMaterialView" Collapsed="true">
-    <Position X="8.75" Y="7" Width="1.5" />
+    <Position X="4.5" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>dmaterialview.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DMaterialModel" Collapsed="true">
-    <Position X="7.25" Y="7" Width="1.5" />
+    <Position X="3" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAEAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>dmaterialmodel.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DShaderToyView" Collapsed="true">
-    <Position X="12.5" Y="7" Width="1.5" />
+    <Position X="8.25" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
       <FileName>dshadertoyview.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DShaderToyModel" Collapsed="true">
-    <Position X="11" Y="7" Width="1.5" />
+    <Position X="6.75" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAIAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>dshadertoymodel.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="de::DIMaterial" Collapsed="true">
-    <Position X="8.75" Y="8.25" Width="1.5" />
+    <Position X="4.5" Y="8.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAgAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>dimaterial.h</FileName>
@@ -115,8 +115,22 @@
   <Class Name="SimpleTriangle" Collapsed="true">
     <Position X="15" Y="7" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAIIAAAAAAAAAACAAAAAAABAAAAQAAQAAAACAAAE=</HashCode>
+      <HashCode>AAAAAIIAAAAAAAAAAGAAAAAAABAAAAQAAQAAAACAAAE=</HashCode>
       <FileName>simpletriangle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpotLight" Collapsed="true">
+    <Position X="19.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BFAAAIIAAABAAAAAAGAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>spotlight.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ModelShow" Collapsed="true">
+    <Position X="12.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAEAIIAAAIAAAAAAGAACAAAAAAAAAQAAAAQAAAAAAA=</HashCode>
+      <FileName>modelshow.h</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

@@ -87,10 +87,3 @@ void DOpenglWidget::init_view()
 	view_->initializeGL();
 	doneCurrent();
 }
-
-void DOpenglWidget::ClearLastGL()
-{
-	makeCurrent();
-	view_->clearGL();
-	doneCurrent();
-}

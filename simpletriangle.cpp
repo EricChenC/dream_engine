@@ -55,6 +55,10 @@ void SimpleTriangle::paintGL(const int & time)
 
 }
 
+void SimpleTriangle::disableGL()
+{
+}
+
 void SimpleTriangle::clearGL()
 {
 	gl_->glDeleteProgram(program_);

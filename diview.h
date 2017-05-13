@@ -22,6 +22,7 @@ public:
 	virtual void initializeGL() = 0;
 	virtual void resizeGL(int w, int h) = 0;
 	virtual void paintGL(const int& time) = 0;
+	virtual void disableGL() = 0;
 	virtual void clearGL() = 0;
 	virtual void keyPressEvent(QKeyEvent *event) = 0;
 	virtual void keyReleaseEvent(QKeyEvent *event) = 0;
@@ -32,6 +33,8 @@ public:
 	virtual void wheelEvent(QWheelEvent *event) = 0;
 	virtual void set_gl(QOpenGLFunctions_4_3_Core *gl) = 0;
 	virtual void set_widget(QWidget *widget) = 0;
+	virtual int get_w() const = 0;
+	virtual int get_h() const = 0;
 };
 }
 
