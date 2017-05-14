@@ -1,5 +1,7 @@
 #include "modelshow.h"
-
+#include "dmodel.h"
+#include "dshader.h"
+#include "dplayercamera.h"
 
 
 ModelShow::ModelShow()

@@ -5,6 +5,8 @@
 
 #include "vdds.h"
 
+#include <qopenglfunctions_4_3_core.h>
+
 namespace de {
 
 class DTexture

@@ -5,6 +5,8 @@
 
 #include "dview.h"
 
+#include <qopenglfunctions_4_3_core.h>
+
 class SpotLight : public DView
 {
 public:

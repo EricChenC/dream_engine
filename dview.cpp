@@ -1,4 +1,7 @@
 #include "dview.h"
+#include "dmodel.h"
+#include "dshader.h"
+#include "dplayercamera.h"
 
 #include <qopenglfunctions_4_3_core.h>
 #include <qwidget.h>

@@ -3,10 +3,12 @@
 #ifndef DOPENGLWIDGET_H
 #define DOPENGLWIDGET_H
 
-#include "diview.h"
-
 #include <qtimer.h>
 #include <qopenglwidget.h>
+
+namespace de {
+	class DIView;
+}
 
 class QOpenGLFunctions_4_3_Core;
 

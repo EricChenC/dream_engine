@@ -5,9 +5,9 @@
 
 #include "dview.h"
 #include "glm/glm.hpp"
-#include "glm/gtc/matrix_transform.hpp"
 
 #include <qopenglfunctions_4_3_core.h>
+#include <qmatrix4x4.h>
 
 class Shadow : public DView
 {

@@ -3,7 +3,6 @@
 #ifndef DDIR_H
 #define DDIR_H
 
-#include <qstring.h>
 #include <qbytearray.h>
 
 namespace de {

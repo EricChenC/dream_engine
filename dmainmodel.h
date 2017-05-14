@@ -3,10 +3,12 @@
 #ifndef DMAINMODEL_H
 #define DMAINMODEL_H
 
-#include "diview.h"
-
-#include <qmap.h>
 #include <qlist.h>
+#include <qmap.h>
+
+namespace de {
+	class DIView;
+}
 
 class DMainModel
 {

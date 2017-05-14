@@ -1,5 +1,7 @@
 #include "dplayercamera.h"
 
+#include <qpoint.h>
+
 namespace de {
 DPlayerCamera::DPlayerCamera()
 {
@@ -110,27 +112,27 @@ void DPlayerCamera::UpdateProjectionRatio(const float & ratio)
 	UpdateProjectionMatrix();
 }
 
-const QMatrix4x4 DPlayerCamera::get_m() const
+const QMatrix4x4& DPlayerCamera::get_m() const
 {
 	return Model_;
 }
 
-const QMatrix4x4 DPlayerCamera::get_v() const
+const QMatrix4x4& DPlayerCamera::get_v() const
 {
 	return View_;
 }
 
-const QMatrix4x4 DPlayerCamera::get_p() const
+const QMatrix4x4& DPlayerCamera::get_p() const
 {
 	return Projection_;
 }
 
-const QMatrix4x4 DPlayerCamera::get_mv() const
+const QMatrix4x4& DPlayerCamera::get_mv() const
 {
 	return View_ * Model_;
 }
 
-const QMatrix4x4 DPlayerCamera::get_mvp() const
+const QMatrix4x4& DPlayerCamera::get_mvp() const
 {
 	return Projection_ * View_ * Model_;
 }

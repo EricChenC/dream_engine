@@ -1,4 +1,5 @@
 #include "simpletriangle.h"
+#include "dshader.h"
 
 
 SimpleTriangle::SimpleTriangle()

@@ -6,6 +6,7 @@
 #include "spotlight.h"
 #include "modelshow.h"
 
+
 DMainModel::DMainModel()
 	: old_view_(NULL)
 {

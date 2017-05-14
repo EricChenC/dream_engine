@@ -1,7 +1,7 @@
 #include "ddir.h"
 
 #include <qdir.h>
-
+#include <qstring.h>
 
 
 namespace de {

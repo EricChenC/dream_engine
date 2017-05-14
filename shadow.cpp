@@ -1,6 +1,9 @@
 #include "shadow.h"
+#include "dmodel.h"
+#include "dshader.h"
+#include "dplayercamera.h"
 
-#include <qmatrix4x4.h>
+#include "glm/gtc/matrix_transform.hpp"
 
 #define DEPTH_TEXTURE_SIZE 2048
 

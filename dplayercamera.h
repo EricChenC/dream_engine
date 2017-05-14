@@ -5,7 +5,8 @@
 
 #include <qmatrix4x4.h>
 #include <qvector3d.h>
-#include <qpoint.h>
+
+class QPoint;
 
 namespace de {
 class DPlayerCamera
@@ -23,11 +24,11 @@ public:
 	void MoveDown();
 	void UpdateProjectionRatio(const float& ratio);
 
-	const QMatrix4x4 get_m() const;
-	const QMatrix4x4 get_v() const;
-	const QMatrix4x4 get_p() const;
-	const QMatrix4x4 get_mv() const;
-	const QMatrix4x4 get_mvp() const;
+	const QMatrix4x4& get_m() const;
+	const QMatrix4x4& get_v() const;
+	const QMatrix4x4& get_p() const;
+	const QMatrix4x4& get_mv() const;
+	const QMatrix4x4& get_mvp() const;
 
 private:
 	float mouse_speed_;

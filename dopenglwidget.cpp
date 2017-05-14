@@ -1,5 +1,7 @@
 #include "dopenglwidget.h"
 
+#include "diview.h"
+
 #include <qopenglfunctions_4_3_core.h>
 #include <qsurfaceformat.h>
 

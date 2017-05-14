@@ -4,12 +4,15 @@
 #define DIVEW_H
 
 #include "diview.h"
-#include "dplayercamera.h"
-#include "dmodel.h"
-#include "dshader.h"
 
-#include <glm/glm.hpp>
-#include <vector>
+#include <qpoint.h>
+
+namespace de {
+	class DModel;
+	class DShader;
+	class DPlayerCamera;
+}
+
 
 class DView : public de::DIView
 {

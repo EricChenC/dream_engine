@@ -1,4 +1,7 @@
 #include "spotlight.h"
+#include "dmodel.h"
+#include "dshader.h"
+#include "dplayercamera.h"
 
 
 SpotLight::SpotLight()
