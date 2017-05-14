@@ -1,5 +1,7 @@
 #include "shadow.h"
 
+#include <qmatrix4x4.h>
+
 #define DEPTH_TEXTURE_SIZE 512
 
 Shadow::Shadow()
@@ -68,25 +70,27 @@ void Shadow::initializeGL()
 
 void Shadow::paintGL(const int& time)
 {
-
+	// qt matrix is a row major
+	// glm matrix is a column major
 	const QMatrix4x4 bias_matrix(
-		0.5f, 0.0f, 0.0f, 0.0f,
-		0.0f, 0.5f, 0.0f, 0.0f,
-		0.0f, 0.0f, 0.5f, 0.0f,
-		0.5f, 0.5f, 0.5f, 1.0f);
+		0.5f, 0.0f, 0.0f, 0.5f,
+		0.0f, 0.5f, 0.0f, 0.5f,
+		0.0f, 0.0f, 0.5f, 0.5f,
+		0.0f, 0.0f, 0.0f, 1.0f);
 
 	QMatrix4x4 mvp = player_camera_->get_mvp();
 
 	QMatrix4x4 light_proj;
-	light_proj.frustum(-1.0f, 1.0f, -1.0f, 1.0f, 1.0f, 1000.0f);
+	light_proj.ortho(-10, 10, -10, 10, -10, 20);
 
 	QMatrix4x4 light_view;
-	light_view.lookAt(QVector3D(0.0f, 4.0f, 4.0f), QVector3D(0.0f, 0.0f, 0.0f), QVector3D(0.0f, 1.0f, 0.0f));
+	// equal 0.0 result is error!  so i just write 0.001
+	light_view.lookAt(QVector3D(0.001f, 5.0f, 5.0f), QVector3D(0.0f, 0.0f, 0.0f), QVector3D(0.0f, 1.0f, 0.0f));
 
 	QMatrix4x4 light_model;
 	light_model.setToIdentity();
 
-	QMatrix4x4 light_mvp = light_proj * light_view * light_model;
+	QMatrix4x4 light_mvp = light_proj * light_view;
 	QMatrix4x4 bias_light_mvp = bias_matrix * light_mvp;
 
 	gl_->glEnable(GL_CULL_FACE);

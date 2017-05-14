@@ -1,23 +1,17 @@
 #version 430 core
 
-uniform sampler2D shadowMap;
+uniform sampler2DShadow shadowMap;
 
 in vec4 ShadowCoord;
 
 out vec4 color;
 
-void main(){
-		
-	/*
-	float depth = texture(shadowMap, ShadowCoord.xy).x;
+void main(){		
 	
-	if(depth < (ShadowCoord.z)/ShadowCoord.w){
-		color = vec4(0.1f, 0.1f, 0.1f, 1.0f);
-	}else{
-		color = vec4(0.8f, 0.8f, 0.8f, 1.0f);
-	} */
+	vec4 LightColor = vec4(1,1,1,1);
 	
-	
-	color = texture(shadowMap, ShadowCoord.xy);
+	float visibility = texture(shadowMap, vec3(ShadowCoord.xy, (ShadowCoord.z)/ShadowCoord.w));
+
+	color = LightColor * visibility;
 	
 }

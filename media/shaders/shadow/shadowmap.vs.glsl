@@ -9,8 +9,8 @@ out vec4 ShadowCoord;
 
 void main(){
 
-	gl_Position =  mvp * vec4(vPosition,1);
-	ShadowCoord = bias_mvp * vec4(vPosition,1);
+	gl_Position =  mvp * vec4(vPosition, 1);
+	ShadowCoord = bias_mvp * vec4(vPosition, 1);
 	
 }
 
