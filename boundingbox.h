@@ -1,17 +1,15 @@
-#pragma once
-
-#ifndef MDOELSHOW_H
-#define MDOELSHOW_H
+#ifndef BOUNDING_BOX_H
+#define BOUNDING_BOX_H
 
 #include "dview.h"
 
 #include <qopenglfunctions_4_3_core.h>
 
-class ModelShow : public DView
+class BoundingBox : public DView
 {
 public:
-	explicit ModelShow();
-	virtual ~ModelShow();
+	explicit BoundingBox();
+	virtual ~BoundingBox();
 
 	virtual void initializeGL();
 	virtual void paintGL(const int& time);
@@ -19,14 +17,19 @@ public:
 	virtual void clearGL();
 
 private:
+	GLuint vao_;
+
 	GLuint program_;
-	GLuint mvp_loc_;
-	GLuint mv_loc_;
-	GLuint light_loc_;
+
+	GLuint global_time_loc_;
+	GLuint resolution_loc_;
 
 };
 
-#endif // !MDOELSHOW_H
+#endif // !BOUNDING_BOX_H
+
+
+
 
 
 

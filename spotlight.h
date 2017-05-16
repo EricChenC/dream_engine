@@ -10,8 +10,8 @@
 class SpotLight : public DView
 {
 public:
-	SpotLight();
-	~SpotLight();
+	explicit SpotLight();
+	virtual ~SpotLight();
 
 	virtual void initializeGL();
 	virtual void paintGL(const int& time);

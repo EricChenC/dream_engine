@@ -5,6 +5,7 @@
 #include "simpletriangle.h"
 #include "spotlight.h"
 #include "modelshow.h"
+#include "boundingbox.h"
 
 
 DMainModel::DMainModel()
@@ -29,6 +30,7 @@ void DMainModel::InitModel()
 	proj_map_->insert("shadow", SHADOW);
 	proj_map_->insert("triangle", TRIANGLES);
 	proj_map_->insert("spotlight", SPOTLIGHT);
+	proj_map_->insert("bounding_box", BOUNDINGBOX);
 }
 
 QList<QString> DMainModel::get_projects()
@@ -56,6 +58,9 @@ de::DIView * DMainModel::get_view(const QString& name)
 		break;
 	case SPOTLIGHT:
 		view_ = new SpotLight();
+		break;
+	case BOUNDINGBOX:
+		view_ = new BoundingBox();
 		break;
 	default:
 		view_ = new ModelShow();

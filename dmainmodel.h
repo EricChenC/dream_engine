@@ -28,7 +28,8 @@ private:
 		SHADOW,
 		TRIANGLES,
 		SPOTLIGHT,
-		MODELSHOW
+		MODELSHOW,
+		BOUNDINGBOX
 	};
 
 	de::DIView *view_;
