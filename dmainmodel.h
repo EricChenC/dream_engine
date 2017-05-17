@@ -29,7 +29,8 @@ private:
 		TRIANGLES,
 		SPOTLIGHT,
 		MODELSHOW,
-		BOUNDINGBOX
+		BOUNDINGBOX,
+		SPECULAR
 	};
 
 	de::DIView *view_;

@@ -6,6 +6,7 @@
 #include "spotlight.h"
 #include "modelshow.h"
 #include "boundingbox.h"
+#include "specular.h"
 
 
 DMainModel::DMainModel()
@@ -31,6 +32,7 @@ void DMainModel::InitModel()
 	proj_map_->insert("triangle", TRIANGLES);
 	proj_map_->insert("spotlight", SPOTLIGHT);
 	proj_map_->insert("bounding_box", BOUNDINGBOX);
+	proj_map_->insert("specular", SPECULAR);
 }
 
 QList<QString> DMainModel::get_projects()
@@ -61,6 +63,9 @@ de::DIView * DMainModel::get_view(const QString& name)
 		break;
 	case BOUNDINGBOX:
 		view_ = new BoundingBox();
+		break;
+	case SPECULAR:
+		view_ = new Specular();
 		break;
 	default:
 		view_ = new ModelShow();
