@@ -9,6 +9,9 @@
 #include <map>
 #include <qopenglfunctions_4_3_core.h>
 
+namespace de {
+	class DIMaterial;
+}
 
 namespace de {
 class DModel
@@ -39,7 +42,8 @@ public:
 	void Render(int type = GL_TRIANGLES, unsigned int instances = 0);
 	void Free();
 	void set_gl(QOpenGLFunctions_4_3_Core* gl);
-
+	void set_material(DIMaterial* material);
+	void set_material_attr();
 
 private:
 	struct PackedVertex {
@@ -58,6 +62,7 @@ private:
 	);
 
 	QOpenGLFunctions_4_3_Core* gl_;
+	DIMaterial* material_;
 	
 	GLuint vao_;
 	GLuint index_bo_;

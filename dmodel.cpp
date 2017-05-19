@@ -1,10 +1,12 @@
 #include "dmodel.h"
 #include "ddir.h"
+#include "dimaterial.h"
 
 #include <map>
 
 namespace de {
 DModel::DModel()
+	: material_(NULL)
 {
 }
 
@@ -228,6 +230,10 @@ void DModel::Load(const char * path)
 	gl_->glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, 0, NULL);
 	gl_->glEnableVertexAttribArray(2);
 
+	if (material_ != NULL) {
+		material_->GenMaterial(gl_);
+	}
+
 	gl_->glBindVertexArray(0);
 
 }
@@ -235,6 +241,11 @@ void DModel::Load(const char * path)
 void DModel::Render(int type, unsigned int instances)
 {
 	gl_->glBindVertexArray(vao_);
+
+	if (material_ != NULL) {
+		set_material_attr();
+		material_->BindMaterial();
+	}
 
 	if (instances > 0) {
 		gl_->glDrawElementsInstanced(type, index_count_, GL_UNSIGNED_SHORT, NULL, instances);
@@ -248,6 +259,10 @@ void DModel::Render(int type, unsigned int instances)
 
 void DModel::Free()
 {
+	if (material_ != NULL) {
+		material_->DeleteMaterial();
+	}
+
 	gl_->glDeleteBuffers(1, &index_bo_);
 	gl_->glDeleteBuffers(1, &vertex_bo_);
 	gl_->glDeleteBuffers(1, &uv_bo_);
@@ -258,6 +273,21 @@ void DModel::Free()
 void DModel::set_gl(QOpenGLFunctions_4_3_Core * gl)
 {
 	gl_ = gl;
+}
+
+void DModel::set_material(DIMaterial * material)
+{
+	material_ = material;
+}
+
+void DModel::set_material_attr()
+{
+	material_->set_m();
+	material_->set_v();
+	material_->set_p();
+	material_->set_mv();
+	material_->set_mvp();
+	material_->set_light_position();
 }
 
 
