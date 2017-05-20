@@ -1,30 +1,33 @@
 
-/*
+
 #version 430 core
 
 layout(location = 0) in vec3 vPosition;
 layout(location = 2) in vec3 vNormal;
 
-uniform mat4 mvp;
-uniform mat4 mv;
+uniform mat4 m;
+uniform mat4 v;
+uniform mat4 p;
 
 out vec4 out_vposition;
 out vec4 out_normal;
 
 void main(){
-	out_vposition = mv * vec4(vPosition, 1.0f);
-	out_normal = mv * vec4(vNormal, 1.0f);
+	out_vposition = vec4(vPosition, 1.0f);
+	out_normal = vec4(vNormal, 1.0f);
 
-	gl_Position = mvp * vec4(vPosition, 1.0f);
+	gl_Position = p * v * m * vec4(vPosition, 1.0f);
 }
 
-*/
 
+
+
+/*
 #version 430 core
 
-uniform mat4 model_matrix;
-uniform mat4 view_matrix;
-uniform mat4 proj_matrix;
+uniform mat4 m;
+uniform mat4 v;
+uniform mat4 p;
 
 layout (location = 0) in vec3 position;
 layout (location = 2) in vec3 normal;
@@ -34,8 +37,10 @@ out vec3 vs_normal;
 
 void main(void)
 {
-    vec4 position = proj_matrix * view_matrix * model_matrix * vec4(position, 1.0f);
+    vec4 position = p * v * m * vec4(position, 1.0f);
     gl_Position = position;
     vs_worldpos = position.xyz;
-    vs_normal = mat3(model_matrix) * normal;
+    vs_normal = mat3(m) * normal;
 }
+
+*/

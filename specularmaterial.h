@@ -9,6 +9,12 @@ public:
 	explicit SpecularMaterial(de::DPlayerCamera* player = NULL);
 	virtual ~SpecularMaterial();
 
+	virtual void set_program();
+
+	virtual void set_material_custom_loc();
+	virtual void set_material_custom_data();
+	virtual void clear_material_custom_data();
+
 };
 
 

@@ -243,7 +243,6 @@ void DModel::Render(int type, unsigned int instances)
 	gl_->glBindVertexArray(vao_);
 
 	if (material_ != NULL) {
-		set_material_attr();
 		material_->BindMaterial();
 	}
 
@@ -280,15 +279,7 @@ void DModel::set_material(DIMaterial * material)
 	material_ = material;
 }
 
-void DModel::set_material_attr()
-{
-	material_->set_m();
-	material_->set_v();
-	material_->set_p();
-	material_->set_mv();
-	material_->set_mvp();
-	material_->set_light_position();
-}
+
 
 
 

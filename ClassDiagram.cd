@@ -4,112 +4,126 @@
     <Position X="10.5" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>CAAAAAAAACAAAQAAAAAAEAAAQAAAAgAAAAAAAAAKIAA=</HashCode>
-      <FileName>dmainmodel.h</FileName>
+      <FileName>C:\Users\Eric\Documents\Visual Studio 2015\Projects\cpp\dream_engine\dmainmodel.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DOpenglWidget" Collapsed="true">
     <Position X="12" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AI4AAIAAACBAAAASACAAJBBAAAAQAAAIAAAAAAABAgA=</HashCode>
-      <FileName>dopenglwidget.h</FileName>
+      <FileName>C:\Users\Eric\Documents\Visual Studio 2015\Projects\cpp\dream_engine\dopenglwidget.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DView" Collapsed="true">
     <Position X="12" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAoAAICAAABAAAASAGkBIABQAgAwEAQAQABAQAAIIgA=</HashCode>
-      <FileName>dview.h</FileName>
+      <FileName>C:\Users\Eric\Documents\Visual Studio 2015\Projects\cpp\dream_engine\dview.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Shadow" Collapsed="true">
     <Position X="13.75" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QAAAAIAWAAAAAAAMFOgACAgIYEAAAAQAokEIAQAAAww=</HashCode>
-      <FileName>shadow.h</FileName>
+      <FileName>C:\Users\Eric\Documents\Visual Studio 2015\Projects\cpp\dream_engine\shadow.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DMainView" Collapsed="true">
     <Position X="12" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAAABABAAEAgAQAAAAAAAAAEAAAAAAEAAAAIAAA=</HashCode>
-      <FileName>dmainview.h</FileName>
+      <FileName>C:\Users\Eric\Documents\Visual Studio 2015\Projects\cpp\dream_engine\dmainview.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="de::DIView" Collapsed="true">
     <Position X="12" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAoAAIAAAABAAAASAGABYABAAAAwEAQAAAAAAAAAAAA=</HashCode>
-      <FileName>diview.h</FileName>
+      <FileName>C:\Users\Eric\Documents\Visual Studio 2015\Projects\cpp\dream_engine\diview.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="de::DShader" Collapsed="true">
     <Position X="2.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAEAAAAAAAAAgAAAAAAAAAAAAAEAAAAAAAAAAQAwA=</HashCode>
-      <FileName>dshader.h</FileName>
+      <FileName>C:\Users\Eric\Documents\Visual Studio 2015\Projects\cpp\dream_engine\dshader.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="de::DTexture" Collapsed="true">
     <Position X="2.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAUAIAAAAAAAQAgAAAAAAAAAEIAAAAAAAIgAAgA=</HashCode>
-      <FileName>dtexture.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="de::DModel" Collapsed="true">
-    <Position X="2.75" Y="3.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>RAIAgAAgEAAAAAAIAIAAAAAGAAABEAAAARAAAAAAAgI=</HashCode>
-      <FileName>dmodel.h</FileName>
+      <FileName>C:\Users\Eric\Documents\Visual Studio 2015\Projects\cpp\dream_engine\dtexture.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="de::DPlayerCamera" Collapsed="true">
     <Position X="2.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAECIAAAAAAAAAEhABAAAgAAAOFAAAMYwGykgACCAwE=</HashCode>
-      <FileName>dplayercamera.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="de::DIMaterial" Collapsed="true">
-    <Position X="2.75" Y="5.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAgAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>dimaterial.h</FileName>
+      <FileName>C:\Users\Eric\Documents\Visual Studio 2015\Projects\cpp\dream_engine\dplayercamera.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="de::DDir" Collapsed="true">
     <Position X="2.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAEAAAAAAAAIgAIAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
-      <FileName>ddir.h</FileName>
+      <FileName>C:\Users\Eric\Documents\Visual Studio 2015\Projects\cpp\dream_engine\ddir.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SimpleTriangle" Collapsed="true">
     <Position X="11.75" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAIIAAAAAAAAAAGAAAAAAABAAAAQAAQAAAACAAAE=</HashCode>
-      <FileName>simpletriangle.h</FileName>
+      <FileName>C:\Users\Eric\Documents\Visual Studio 2015\Projects\cpp\dream_engine\simpletriangle.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SpotLight" Collapsed="true">
     <Position X="16" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BFAAAIIAAABAAAAAAGAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
-      <FileName>spotlight.h</FileName>
+      <FileName>C:\Users\Eric\Documents\Visual Studio 2015\Projects\cpp\dream_engine\spotlight.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ModelShow" Collapsed="true">
     <Position X="9.5" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABAEAIIAAAIAAAAAAGAACAAAAAAAAAQAAAAQAAAAAAA=</HashCode>
-      <FileName>modelshow.h</FileName>
+      <FileName>C:\Users\Eric\Documents\Visual Studio 2015\Projects\cpp\dream_engine\modelshow.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BoundingBox" Collapsed="true">
     <Position X="7.5" Y="7" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>boundingbox.h</FileName>
+      <HashCode>AAAAAIIAAAAABAIAAGAIAAAAACAAAAQAAQAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Eric\Documents\Visual Studio 2015\Projects\cpp\dream_engine\boundingbox.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="de::DModel" Collapsed="true">
+    <Position X="2.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RAIAgAIgEAAAAAAIAIAAAAAGAAABEAAAARAAAABAAgI=</HashCode>
+      <FileName>C:\Users\Eric\Documents\Visual Studio 2015\Projects\cpp\dream_engine\dmodel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DMaterial" Collapsed="true">
+    <Position X="21" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFQAAUJAgAIAAIAAAYIRi4gEEAAYAQAAUACABDIAAoA=</HashCode>
+      <FileName>C:\Users\Eric\Documents\Visual Studio 2015\Projects\cpp\dream_engine\dmaterial.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpecularMaterial" Collapsed="true">
+    <Position X="19.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAIAAAAAIAAAAAACAABBAAAA=</HashCode>
+      <FileName>C:\Users\Eric\Documents\Visual Studio 2015\Projects\cpp\dream_engine\specularmaterial.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="de::DIMaterial" Collapsed="true">
+    <Position X="21" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAgAAAAAYAAAAAAAAAAAAAYAAAAAAAAACAAAAA=</HashCode>
+      <FileName>C:\Users\Eric\Documents\Visual Studio 2015\Projects\cpp\dream_engine\dimaterial.h</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

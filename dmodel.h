@@ -43,7 +43,6 @@ public:
 	void Free();
 	void set_gl(QOpenGLFunctions_4_3_Core* gl);
 	void set_material(DIMaterial* material);
-	void set_material_attr();
 
 private:
 	struct PackedVertex {
