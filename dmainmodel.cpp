@@ -7,6 +7,7 @@
 #include "modelshow.h"
 #include "boundingbox.h"
 #include "specular.h"
+#include "multitexture.h"
 
 
 DMainModel::DMainModel()
@@ -33,6 +34,7 @@ void DMainModel::InitModel()
 	proj_map_->insert("spotlight", SPOTLIGHT);
 	proj_map_->insert("bounding_box", BOUNDINGBOX);
 	proj_map_->insert("specular", SPECULAR);
+	proj_map_->insert("multi_texture", MULTITEXTURE);
 }
 
 QList<QString> DMainModel::get_projects()
@@ -66,6 +68,9 @@ de::DIView * DMainModel::get_view(const QString& name)
 		break;
 	case SPECULAR:
 		view_ = new Specular();
+		break;
+	case MULTITEXTURE:
+		view_ = new MultiTexture();
 		break;
 	default:
 		view_ = new ModelShow();

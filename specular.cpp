@@ -51,7 +51,7 @@ void Specular::paintGL(const int & time)
 	time_v += time;
 	float angle_y = cos(time_v * 0.01f);
 	float angel_z = sin(time_v * 0.01f) + 4.0f;
-	const float light_pos[] = {0.0f, 10.0f, 10.0f};
+	const float light_pos[] = {0.0f, angle_y, angel_z};
 	specular_material_->update_light_pos(light_pos);
 	model_->Render();
 
@@ -65,6 +65,8 @@ void Specular::paintGL(const int & time)
 		0.0f, 0.0f, 0.0f, 1.0f
 	};
 
+	const float blinn_light_pos[] = { 0.0f, 10.0f, 10.0f };
+	blinn_material_->update_light_pos(blinn_light_pos);
 	blinn_material_->update_m(model_mat.constData());
 	nude_model_->Render();
 

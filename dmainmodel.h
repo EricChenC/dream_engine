@@ -30,7 +30,8 @@ private:
 		SPOTLIGHT,
 		MODELSHOW,
 		BOUNDINGBOX,
-		SPECULAR
+		SPECULAR,
+		MULTITEXTURE
 	};
 
 	de::DIView *view_;
