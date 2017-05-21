@@ -44,7 +44,14 @@ void DMainView::InitUI(QApplication *app)
 		example_menu_->addAction(examples.at(i));
 	}
 
+	mode_menu_ = menu_bar_->addMenu("mode");
+	QList<QString> modes = model_->get_modes();
+	for (int j = 0; j < modes.size(); ++j) {
+		mode_menu_->addAction(modes.at(j));
+	}
+
 	connect(example_menu_, SIGNAL(triggered(QAction *)), this, SLOT(ExampleAction(QAction *)));
+	connect(mode_menu_, SIGNAL(triggered(QAction *)), this, SLOT(ModeAction(QAction *)));
 
 }
 
@@ -53,12 +60,17 @@ void DMainView::Show()
 	window_->show();
 }
 
+void DMainView::ModeAction(QAction * action)
+{
+	model_->set_polygon_mode(action->text());
+}
+
 void DMainView::ExampleAction(QAction *action) {
-	if (last_action_ == action) {
+	if (last_example_action_ == action) {
 		return;
 	}
 
-	last_action_ = action;
+	last_example_action_ = action;
 	gl_widget_->set_view(model_->get_view(action->text()));
 	gl_widget_->init_view();
 	model_->ClearOldView();

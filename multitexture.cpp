@@ -26,7 +26,6 @@ void MultiTexture::initializeGL()
 	gl_->glEnable(GL_DEPTH_TEST);
 	gl_->glEnable(GL_CULL_FACE);
 	gl_->glCullFace(GL_BACK);
-
 }
 
 void MultiTexture::paintGL(const int & time)

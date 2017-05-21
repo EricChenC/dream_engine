@@ -34,13 +34,17 @@ public:
 	virtual void wheelEvent(QWheelEvent *event);
 
 	virtual void set_gl(QOpenGLFunctions_4_3_Core *gl);
-	virtual void set_widget(QWidget *widget);
+	virtual void set_widget(DOpenglWidget *widget);
+	virtual void set_polygon_mode(const int& mode);
+
 	virtual int get_w() const;
 	virtual int get_h() const;
 
+	virtual void restore_polygon_mode();
+
 protected:
 	QOpenGLFunctions_4_3_Core *gl_;
-	QWidget *gl_widget_;
+	DOpenglWidget *gl_widget_;
 	de::DModel *model_;
 	de::DShader *shader_;
 	de::DPlayerCamera *player_camera_;

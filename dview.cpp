@@ -2,9 +2,9 @@
 #include "dmodel.h"
 #include "dshader.h"
 #include "dplayercamera.h"
+#include "dopenglwidget.h"
 
 #include <qopenglfunctions_4_3_core.h>
-#include <qwidget.h>
 #include <QKeyEvent>
 #include <QMouseEvent>
 #include <QWheelEvent>
@@ -22,6 +22,7 @@ DView::DView()
 
 DView::~DView()
 {
+	restore_polygon_mode();
 	clearGL();
 
 	delete player_camera_;
@@ -164,6 +165,27 @@ void DView::wheelEvent(QWheelEvent * event)
 	}
 }
 
+void DView::set_polygon_mode(const int & mode)
+{
+	gl_widget_->makeCurrent();
+
+	switch (mode)
+	{
+	case 1:
+		gl_->glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+		break;
+	case 2:
+		gl_->glPolygonMode(GL_FRONT_AND_BACK, GL_POINT);
+		break;
+	case 0:
+	default:
+		gl_->glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+		break;
+	}
+
+	gl_widget_->doneCurrent();
+}
+
 void DView::set_gl(QOpenGLFunctions_4_3_Core * gl)
 {
 	gl_ = gl;
@@ -171,7 +193,7 @@ void DView::set_gl(QOpenGLFunctions_4_3_Core * gl)
 	shader_->set_gl(gl);
 }
 
-void DView::set_widget(QWidget * widget)
+void DView::set_widget(DOpenglWidget * widget)
 {
 	gl_widget_ = widget;
 }
@@ -184,6 +206,13 @@ int DView::get_w() const
 int DView::get_h() const
 {
 	return h_;
+}
+
+void DView::restore_polygon_mode()
+{
+	gl_widget_->makeCurrent();
+	gl_->glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+	gl_widget_->doneCurrent();
 }
 
 

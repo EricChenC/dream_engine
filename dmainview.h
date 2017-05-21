@@ -26,6 +26,7 @@ public:
 
 public slots:
 	void ExampleAction(QAction *action);
+	void ModeAction(QAction *action);
 
 private:
 	QMainWindow *window_;
@@ -34,7 +35,8 @@ private:
 
 	QMenuBar *menu_bar_;
 	QMenu *example_menu_;
-	QAction *last_action_;
+	QMenu *mode_menu_;
+	QAction *last_example_action_;
 
 };
 

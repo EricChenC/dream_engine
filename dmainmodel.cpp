@@ -21,6 +21,8 @@ DMainModel::~DMainModel()
 {
 	proj_map_->clear();
 	delete proj_map_;
+	mode_map_->clear();
+	delete mode_map_;
 	view_->disableGL();
 	delete view_;
 }
@@ -35,11 +37,21 @@ void DMainModel::InitModel()
 	proj_map_->insert("bounding_box", BOUNDINGBOX);
 	proj_map_->insert("specular", SPECULAR);
 	proj_map_->insert("multi_texture", MULTITEXTURE);
+
+	mode_map_ = new QMap<QString, int>();
+	mode_map_->insert("fill", MODE_FILL);
+	mode_map_->insert("line", MODE_LINE);
+	mode_map_->insert("point", MODE_POINT);
 }
 
 QList<QString> DMainModel::get_projects()
 {
 	return proj_map_->keys();
+}
+
+QList<QString> DMainModel::get_modes()
+{
+	return mode_map_->keys();
 }
 
 de::DIView * DMainModel::get_view(const QString& name)
@@ -81,6 +93,23 @@ de::DIView * DMainModel::get_view(const QString& name)
 	view_->resizeGL(old_view_->get_w(), old_view_->get_h());
 
 	return view_;
+}
+
+void DMainModel::set_polygon_mode(const QString & mode)
+{
+	switch (mode_map_->value(mode))
+	{
+	case MODE_LINE:
+		view_->set_polygon_mode(MODE_LINE);
+		break;
+	case MODE_POINT:
+		view_->set_polygon_mode(MODE_POINT);
+		break;
+	case MODE_FILL:
+	default:
+		view_->set_polygon_mode(MODE_FILL);
+		break;
+	}
 }
 
 void DMainModel::ClearOldView()
