@@ -1,13 +1,13 @@
-#ifndef SPECULAR_MATERIAL_H
-#define SPECULAR_MATERIAL_H
+#ifndef BLINN_MATERIAL_H
+#define BLINN_MATERIAL_H
 
 #include "dmaterial.h"
 
-class SpecularMaterial : public DMaterial
+class BlinnMaterial : public DMaterial
 {
 public:
-	explicit SpecularMaterial();
-	virtual ~SpecularMaterial();
+	explicit BlinnMaterial();
+	virtual ~BlinnMaterial();
 
 	virtual void set_program();
 
@@ -18,7 +18,7 @@ public:
 };
 
 
-#endif // !SPECULAR_MATERIAL_H
+#endif // !BLINN_MATERIAL_H
 
 
 

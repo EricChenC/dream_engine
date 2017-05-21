@@ -242,10 +242,6 @@ void DModel::Render(int type, unsigned int instances)
 {
 	gl_->glBindVertexArray(vao_);
 
-	if (material_ != NULL) {
-		material_->BindMaterial();
-	}
-
 	if (instances > 0) {
 		gl_->glDrawElementsInstanced(type, index_count_, GL_UNSIGNED_SHORT, NULL, instances);
 	}

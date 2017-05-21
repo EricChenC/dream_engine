@@ -1,3 +1,5 @@
+#ifndef DREAM_ENGINE_DMATERIAL_H
+#define DREAM_ENGINE_DMATERIAL_H
 
 #include "dimaterial.h"
 
@@ -20,7 +22,7 @@ public:
 
 	virtual void set_camera(de::DPlayerCamera* player);
 	virtual void set_program();
-	
+
 	virtual void set_material_loc();
 	virtual void set_material_default_loc();
 	virtual void set_material_custom_loc();
@@ -44,14 +46,14 @@ public:
 	virtual void update_mv(const float* mv);
 	virtual void update_mvp(const float* mvp);
 	virtual void update_light_pos(const float* light_pos);
-	
+
 protected:
 	QOpenGLFunctions_4_3_Core *gl_;
 	GLuint program_;
 	de::DShader *shaders_;
 
 private:
-	
+
 
 	GLuint m_loc_;
 	GLuint v_loc_;
@@ -69,7 +71,11 @@ private:
 
 	de::DPlayerCamera* player_;
 
-	
-
 };
+
+#endif // !DREAM_ENGINE_DMATERIAL_H
+
+
+
+
 

@@ -3,7 +3,12 @@
 
 #include "dview.h"
 
+namespace de {
+	class DModel;
+}
+
 class SpecularMaterial;
+class BlinnMaterial;
 
 class Specular : public DView
 {
@@ -18,6 +23,9 @@ public:
 
 private:
 	SpecularMaterial* specular_material_;
+	BlinnMaterial* blinn_material_;
+
+	de::DModel* nude_model_;
 
 };
 

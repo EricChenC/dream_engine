@@ -2,7 +2,7 @@
 #include "dshader.h"
 
 
-SpecularMaterial::SpecularMaterial(de::DPlayerCamera* player)
+SpecularMaterial::SpecularMaterial()
 {
 	
 }
