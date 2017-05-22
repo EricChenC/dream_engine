@@ -1,4 +1,3 @@
-#pragma once
 
 #ifndef DMAINVIEW_H
 #define DMAINVIEW_H

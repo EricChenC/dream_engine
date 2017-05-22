@@ -8,6 +8,7 @@
 #include "boundingbox.h"
 #include "specular.h"
 #include "multitexture.h"
+#include "simpletess.h"
 
 
 DMainModel::DMainModel()
@@ -37,6 +38,7 @@ void DMainModel::InitModel()
 	proj_map_->insert("bounding_box", BOUNDINGBOX);
 	proj_map_->insert("specular", SPECULAR);
 	proj_map_->insert("multi_texture", MULTITEXTURE);
+	proj_map_->insert("simple_tess", SIMPLETESS);
 
 	mode_map_ = new QMap<QString, int>();
 	mode_map_->insert("fill", MODE_FILL);
@@ -83,6 +85,9 @@ de::DIView * DMainModel::get_view(const QString& name)
 		break;
 	case MULTITEXTURE:
 		view_ = new MultiTexture();
+		break;
+	case SIMPLETESS:
+		view_ = new SimpleTess();
 		break;
 	default:
 		view_ = new ModelShow();
