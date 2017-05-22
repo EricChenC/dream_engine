@@ -3,6 +3,8 @@
 
 #include "dview.h"
 
+#include <qopenglfunctions_4_3_core.h>
+
 class SimpleTessMaterial;
 
 class SimpleTess : public DView
@@ -18,6 +20,8 @@ public:
 
 private:
 	SimpleTessMaterial* tess_material_;
+
+	GLuint vao_;
 
 };
 
