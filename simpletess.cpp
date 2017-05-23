@@ -25,8 +25,6 @@ void SimpleTess::initializeGL()
 	gl_->glGenVertexArrays(1, &vao_);
 	gl_->glBindVertexArray(vao_);
 
-
-
 	gl_->glEnable(GL_DEPTH_TEST);
 	gl_->glEnable(GL_CULL_FACE);
 	gl_->glCullFace(GL_BACK);
@@ -42,7 +40,7 @@ void SimpleTess::paintGL(const int & time)
 
 	//model_->Render(GL_PATCHES);
 
-	gl_->glDrawArrays(GL_PATCHES, 0, 3);
+	gl_->glDrawArrays(GL_PATCHES, 0, 4);
 
 }
 

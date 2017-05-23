@@ -3,7 +3,7 @@
 
 
 SimpleTessMaterial::SimpleTessMaterial()
-	: patch_num_(3),
+	: patch_num_(4),
 	inner_(4.0f),
 	outer_(4.0f)
 {
