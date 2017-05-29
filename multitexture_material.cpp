@@ -32,7 +32,6 @@ void MultiTextureMaterial::set_material_custom_loc()
 {
 	dtexture_->set_gl(gl_);
 
-
 	time_loc_ = gl_->glGetUniformLocation(program_, "time");
 	tex_one_loc_ = gl_->glGetUniformLocation(program_, "tex1");
 	tex_two_loc_ = gl_->glGetUniformLocation(program_, "tex2");

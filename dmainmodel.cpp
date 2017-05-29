@@ -9,6 +9,7 @@
 #include "specular.h"
 #include "multitexture.h"
 #include "simpletess.h"
+#include "object_instanced.h"
 
 
 DMainModel::DMainModel()
@@ -39,6 +40,7 @@ void DMainModel::InitModel()
 	proj_map_->insert("specular", SPECULAR);
 	proj_map_->insert("multi_texture", MULTITEXTURE);
 	proj_map_->insert("simple_tess", SIMPLETESS);
+	proj_map_->insert("object_instanced", OBJECTINSTANCED);
 
 	mode_map_ = new QMap<QString, int>();
 	mode_map_->insert("fill", MODE_FILL);
@@ -88,6 +90,9 @@ de::DIView * DMainModel::get_view(const QString& name)
 		break;
 	case SIMPLETESS:
 		view_ = new SimpleTess();
+		break;
+	case OBJECTINSTANCED:
+		view_ = new ObjectInstanced();
 		break;
 	default:
 		view_ = new ModelShow();
