@@ -13,7 +13,7 @@ DShader::~DShader()
 {
 }
 
-void DShader::set_gl(QOpenGLFunctions_4_3_Core * gl)
+void DShader::set_gl(QOpenGLFunctions_4_4_Core * gl)
 {
 	gl_ = gl;
 }

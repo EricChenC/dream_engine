@@ -4,7 +4,7 @@
 #include "dplayercamera.h"
 #include "dopenglwidget.h"
 
-#include <qopenglfunctions_4_3_core.h>
+#include <qopenglfunctions_4_4_core.h>
 #include <QKeyEvent>
 #include <QMouseEvent>
 #include <QWheelEvent>
@@ -186,7 +186,7 @@ void DView::set_polygon_mode(const int & mode)
 	gl_widget_->doneCurrent();
 }
 
-void DView::set_gl(QOpenGLFunctions_4_3_Core * gl)
+void DView::set_gl(QOpenGLFunctions_4_4_Core * gl)
 {
 	gl_ = gl;
 	model_->set_gl(gl);

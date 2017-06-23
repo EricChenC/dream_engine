@@ -3,7 +3,7 @@
 #ifndef VDDS_H
 #define VDDS_H
 
-#include <qopenglfunctions_4_3_core.h>
+#include <qopenglfunctions_4_4_core.h>
 
 #define MAX_TEXTURE_MIPS    14
 #define NUM_DDS_FORMATS     (sizeof(gl_info_table) / sizeof(gl_info_table[0]))

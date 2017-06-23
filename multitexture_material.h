@@ -3,7 +3,7 @@
 
 #include "dmaterial.h"
 
-#include <qopenglfunctions_4_3_core.h>
+#include <qopenglfunctions_4_4_core.h>
 
 namespace de {
 	class DTexture;

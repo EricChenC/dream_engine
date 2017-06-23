@@ -9,7 +9,7 @@ set(QT_USE_QTOPENGL ON)
 find_package(Qt5Core)
 find_package(Qt5Widgets)
 
-include_directories("C:/Users/Eric/Documents/Visual Studio 2015/Projects/cpp/glm/")
+include_directories("D:/depend_library/glm/")
 	
 	
 file(GLOB SOURCE ./*.*)

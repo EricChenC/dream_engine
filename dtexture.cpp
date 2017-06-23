@@ -426,7 +426,7 @@ GLuint DTexture::vglLoadTexture(const char* filename,
 	return texture;
 }
 
-void DTexture::set_gl(QOpenGLFunctions_4_3_Core * gl)
+void DTexture::set_gl(QOpenGLFunctions_4_4_Core * gl)
 {
 	gl_ = gl;
 }

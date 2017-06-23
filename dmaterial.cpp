@@ -17,7 +17,7 @@ DMaterial::~DMaterial()
 }
 
 
-void DMaterial::GenMaterial(QOpenGLFunctions_4_3_Core * gl)
+void DMaterial::GenMaterial(QOpenGLFunctions_4_4_Core * gl)
 {
 	gl_ = gl;
 	shaders_->set_gl(gl);

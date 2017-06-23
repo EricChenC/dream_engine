@@ -265,7 +265,7 @@ void DModel::Free()
 	gl_->glDeleteVertexArrays(1, &vao_);
 }
 
-void DModel::set_gl(QOpenGLFunctions_4_3_Core * gl)
+void DModel::set_gl(QOpenGLFunctions_4_4_Core * gl)
 {
 	gl_ = gl;
 }

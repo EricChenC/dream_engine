@@ -2,7 +2,7 @@
 
 #include "diview.h"
 
-#include <qopenglfunctions_4_3_core.h>
+#include <qopenglfunctions_4_4_core.h>
 #include <qsurfaceformat.h>
 
 DOpenglWidget::DOpenglWidget(QWidget *parent)
@@ -26,7 +26,7 @@ DOpenglWidget::~DOpenglWidget()
 
 void DOpenglWidget::initializeGL()
 {
-	gl_ = new QOpenGLFunctions_4_3_Core();
+	gl_ = new QOpenGLFunctions_4_4_Core();
 	gl_->initializeOpenGLFunctions();
 	init_view();
 }

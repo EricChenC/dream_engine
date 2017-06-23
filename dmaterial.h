@@ -3,7 +3,7 @@
 
 #include "dimaterial.h"
 
-#include <qopenglfunctions_4_3_core.h>
+#include <qopenglfunctions_4_4_core.h>
 
 namespace de {
 	class DShader;
@@ -16,7 +16,7 @@ public:
 	explicit DMaterial();
 	virtual ~DMaterial();
 
-	virtual void GenMaterial(QOpenGLFunctions_4_3_Core* gl);
+	virtual void GenMaterial(QOpenGLFunctions_4_4_Core* gl);
 	virtual void BindMaterial();
 	virtual void DeleteMaterial();
 
@@ -48,7 +48,7 @@ public:
 	virtual void update_light_pos(const float* light_pos);
 
 protected:
-	QOpenGLFunctions_4_3_Core *gl_;
+	QOpenGLFunctions_4_4_Core *gl_;
 	GLuint program_;
 	de::DShader *shaders_;
 

@@ -5,7 +5,7 @@
 
 #include "vdds.h"
 
-#include <qopenglfunctions_4_3_core.h>
+#include <qopenglfunctions_4_4_core.h>
 
 namespace de {
 
@@ -20,7 +20,7 @@ public:
 		GLuint texture,
 		vglImageData* image);
 
-	void set_gl(QOpenGLFunctions_4_3_Core* gl);
+	void set_gl(QOpenGLFunctions_4_4_Core* gl);
 
 private:
 	bool vgl_DDSHeaderToImageDataHeader(const DDS_FILE_HEADER& header, vglImageData* image);
@@ -29,7 +29,7 @@ private:
 	void vglLoadDDS(const char* filename, vglImageData* image);
 	void vglLoadImage(const char* filename, vglImageData* image);
 
-	QOpenGLFunctions_4_3_Core* gl_;
+	QOpenGLFunctions_4_4_Core* gl_;
 
 };
 

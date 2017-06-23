@@ -18,7 +18,7 @@ char* DDir::get_dir(const char* path)
 {
 	QDir dir;
 	QString absolute_path = dir.absolutePath();
-	QStringList paths = absolute_path.split("dream_engine_build");
+	QStringList paths = absolute_path.split("build");
 
 	QString media_path = paths[0] + "dream_engine/media/" + QString(QLatin1String(path));
 	byte_path_ = media_path.toLatin1();

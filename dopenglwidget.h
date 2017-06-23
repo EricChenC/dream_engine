@@ -10,7 +10,7 @@ namespace de {
 	class DIView;
 }
 
-class QOpenGLFunctions_4_3_Core;
+class QOpenGLFunctions_4_4_Core;
 
 class DOpenglWidget : public QOpenGLWidget
 {
@@ -32,7 +32,7 @@ public:
 	void init_view();
 
 private:
-	QOpenGLFunctions_4_3_Core *gl_;
+	QOpenGLFunctions_4_4_Core *gl_;
 	de::DIView *view_;
 	de::DIView *view_old_;
 	QTimer timer_;

@@ -6,7 +6,7 @@
 #include "dview.h"
 #include "glm/glm.hpp"
 
-#include <qopenglfunctions_4_3_core.h>
+#include <qopenglfunctions_4_4_core.h>
 #include <qmatrix4x4.h>
 
 class Shadow : public DView

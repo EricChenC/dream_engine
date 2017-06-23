@@ -7,7 +7,7 @@
 
 #include <vector>
 #include <map>
-#include <qopenglfunctions_4_3_core.h>
+#include <qopenglfunctions_4_4_core.h>
 
 namespace de {
 	class DIMaterial;
@@ -41,7 +41,7 @@ public:
 	void Load(const char * path);
 	void Render(int type = GL_TRIANGLES, unsigned int instances = 0);
 	void Free();
-	void set_gl(QOpenGLFunctions_4_3_Core* gl);
+	void set_gl(QOpenGLFunctions_4_4_Core* gl);
 	void set_material(DIMaterial* material);
 
 private:
@@ -60,7 +60,7 @@ private:
 		unsigned short & result
 	);
 
-	QOpenGLFunctions_4_3_Core* gl_;
+	QOpenGLFunctions_4_4_Core* gl_;
 	DIMaterial* material_;
 	
 	GLuint vao_;

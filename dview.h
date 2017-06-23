@@ -33,7 +33,7 @@ public:
 	virtual void mouseReleaseEvent(QMouseEvent *event);
 	virtual void wheelEvent(QWheelEvent *event);
 
-	virtual void set_gl(QOpenGLFunctions_4_3_Core *gl);
+	virtual void set_gl(QOpenGLFunctions_4_4_Core *gl);
 	virtual void set_widget(DOpenglWidget *widget);
 	virtual void set_polygon_mode(const int& mode);
 
@@ -43,7 +43,7 @@ public:
 	virtual void restore_polygon_mode();
 
 protected:
-	QOpenGLFunctions_4_3_Core *gl_;
+	QOpenGLFunctions_4_4_Core *gl_;
 	DOpenglWidget *gl_widget_;
 	de::DModel *model_;
 	de::DShader *shader_;
